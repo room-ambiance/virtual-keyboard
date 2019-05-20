@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.keyboard {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 5px 0;
+  /* webgradient #49 fresh milk */
+  background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+  width: 100%;
+}
+
+.keyboard__keys {
+  text-align: center;
+}
+
+.keyboard--hidden {
+  display: none;
+}
