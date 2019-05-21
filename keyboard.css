@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Kodchasan", sans-serif;
+}
+
 .keyboard {
   position: fixed;
   bottom: 0;
@@ -11,13 +15,72 @@
   padding: 5px 0;
   /* webgradient #49 fresh milk */
   background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   width: 100%;
+  user-select: none;
 }
 
 .keyboard__keys {
   text-align: center;
 }
 
+.keyboard__key {
+  position: relative;
+  width: 6%;
+  max-width: 90px;
+  height: 45px;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.05rem;
+  margin: 3px;
+  background: rgba(255, 255, 255, 0.45);
+  outline: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  padding: 0;
+}
+
+.keyboard__key:active {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+/* tab sized key, 2x default key size*/
+.keyboard__key--tab {
+  width: 12%;
+  max-width: 250px;
+}
+
+/* space bar sized key, 6x default key size */
+.keyboard__key--spacebar {
+  width: 36%;
+  max-width: 500px;
+}
+
+/* caps lock toggle light off */
+.keyboard__key--activatable::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* caps lock toggle light on */
+.keyboard__key--active::after {
+  background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+}
+
+.keyboard__key--dark {
+  background: rgba(0, 0, 0, 0.24);
+}
+
 .keyboard--hidden {
-  display: none;
+  bottom: -100%;
+  /* display: none; */
 }
