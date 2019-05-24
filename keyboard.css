@@ -76,6 +76,7 @@ body {
   background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
 }
 
+/* dark key background */
 .keyboard__key--dark {
   background: rgba(0, 0, 0, 0.24);
 }
