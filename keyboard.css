@@ -8,6 +8,11 @@ body {
   font-family: "Kodchasan", sans-serif;
 }
 
+textarea {
+  display: flex;
+  justify-content: center;
+}
+
 .keyboard {
   position: fixed;
   bottom: 0;
