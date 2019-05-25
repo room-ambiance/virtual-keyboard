@@ -4,13 +4,16 @@
   box-sizing: border-box;
 }
 
-body {
+textarea {
   font-family: "Kodchasan", sans-serif;
+  font-size: 10px;
+  resize: none;
+  outline: none;
+  display: block;
+  margin: 0 auto;
 }
 
-textarea {
-  display: flex;
-  justify-content: center;
+.use-keyboard-input {
 }
 
 .keyboard {
@@ -20,9 +23,10 @@ textarea {
   padding: 5px 0;
   /* webgradient #49 fresh milk */
   background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.27);
   width: 100%;
   user-select: none;
+  transition: bottom 0.45s;
 }
 
 .keyboard__keys {
