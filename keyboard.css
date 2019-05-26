@@ -10,7 +10,29 @@ textarea {
   resize: none;
   outline: none;
   display: block;
-  margin: 0 auto;
+  margin: auto;
+}
+.container {
+  /* display: flex; */
+}
+
+.keyboard__pop {
+  outline: none;
+  cursor: pointer;
+  margin: 220px 70px;
+  font-size: 1.05rem;
+  width: 6%;
+  max-width: 90px;
+  height: 45px;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+}
+
+.keyboard__pop:hover {
+  color: #feada6;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
 }
 
 .use-keyboard-input {

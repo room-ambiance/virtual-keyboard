@@ -129,7 +129,7 @@ const Keyboard = {
 
           keyElement.addEventListener("click", () => {
             this.properties.value += "\n";
-            this.triggerEvents("ominput");
+            this.triggerEvents("oninput");
           });
           break;
 
@@ -139,7 +139,7 @@ const Keyboard = {
 
           keyElement.addEventListener("click", () => {
             this.properties.value += " ";
-            this.triggerEvents(oninput);
+            this.triggerEvents("oninput");
           });
           break;
 
